@@ -12,6 +12,12 @@ import IMAGE_10 from "../images/10.jpg";
 
 const data: DataT[] = [
   {
+
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 1,
     name: "Leanne Graham",
     isOnline: true,
@@ -21,8 +27,16 @@ const data: DataT[] = [
     message:
       "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
     image: IMAGE_01,
+    age: "28"
+
   },
   {
+    age: "28",
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 2,
     name: "Clementine Bauch",
     match: "93",
@@ -33,6 +47,13 @@ const data: DataT[] = [
     image: IMAGE_02,
   },
   {
+    age: "28"
+    ,
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 3,
     name: "Ervin Howell",
     match: "45",
@@ -44,6 +65,12 @@ const data: DataT[] = [
     image: IMAGE_03,
   },
   {
+
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 4,
     name: "John Lebsack",
     match: "88",
@@ -52,8 +79,15 @@ const data: DataT[] = [
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
     image: IMAGE_04,
+    age: "28"
+
   },
   {
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 5,
     name: "James Dietrich",
     match: "76",
@@ -62,8 +96,15 @@ const data: DataT[] = [
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
+    age: "28"
+
   },
   {
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 6,
     name: "Patricia Schulist",
     match: "95",
@@ -73,8 +114,15 @@ const data: DataT[] = [
     message:
       "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
     image: IMAGE_06,
+    age: "28"
+
   },
   {
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 7,
     name: "Chelsey Weissnat",
     match: "67",
@@ -84,6 +132,8 @@ const data: DataT[] = [
     message:
       "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
     image: IMAGE_07,
+    age: "28"
+
   },
   {
     id: 8,
@@ -101,8 +151,14 @@ const data: DataT[] = [
     message:
       "And as for the television's so-called plan, Batman has no jurisdiction.",
     image: IMAGE_08,
+
   },
   {
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 9,
     name: "Glenna Reichert",
     match: "74",
@@ -112,8 +168,15 @@ const data: DataT[] = [
     message:
       "This is what happens when an unstoppable force meets an immovable object.",
     image: IMAGE_09,
+    age: "28"
+
   },
   {
+    location: "Irvine, CA",
+    info1: 'Straight, Single, 5"10',
+    info2: "Tea Totaller, Loves Photography & Travel",
+    info3: "Beaches, Mountain, Cafe, Movies",
+    info4: "Last seen: 23h ago",
     id: 10,
     name: "Kurtis DuBuque",
     match: "98",
@@ -123,6 +186,8 @@ const data: DataT[] = [
     message:
       "You want order in Gotham. Batman must take off his mask and turn himself in.",
     image: IMAGE_10,
+    age: "28"
+
   },
 ];
 

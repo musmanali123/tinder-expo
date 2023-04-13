@@ -6,6 +6,8 @@ export const WHITE = "#FFFFFF";
 export const GRAY = "#757E90";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
+export const MsgColor = "#D8D8D8";
+
 
 export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
@@ -299,4 +301,52 @@ export default StyleSheet.create({
   iconMenu: {
     alignItems: "center",
   },
+  socialLik: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignContent: 'center',
+    padding: 10
+  },
+  fbLogo: {
+    paddingTop: 9.1,
+    borderRadius: 50,
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+    backgroundColor: '#4267B2'
+  },
+
+  instaLogo: {
+    paddingTop: 8,
+    borderRadius: 50,
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+    backgroundColor: '#962fbf'
+
+  },
+  twitterLogo: {
+    paddingTop: 9.4,
+    borderRadius: 50,
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+    backgroundColor: '#00acee'
+  },
+  modal: {
+    alignSelf: 'center',
+    marginTop: DIMENSION_HEIGHT * 0.3,
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: DIMENSION_HEIGHT * 0.1,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  }
 });

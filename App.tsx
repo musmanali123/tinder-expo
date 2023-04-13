@@ -5,6 +5,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Matches, Messages, Profile } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
+import User from "./screens/User";
+import { Ionicons } from "@expo/vector-icons";
+import { Icon } from "./components";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -96,6 +99,8 @@ const App = () => (
           </Tab.Navigator>
         )}
       </Stack.Screen>
+      <Stack.Screen name="User" component={User}   
+        options={{ headerShown: false, animationEnabled: false }} ></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 );

@@ -13,11 +13,12 @@ const ProfileItem = ({
   location,
   matches,
   name,
-}: ProfileItemT) => (
-  <View style={styles.containerProfileItem}>
+  isOnline,
+}: ProfileItem) => (
+  <View style={[styles.containerProfileItem]}>
     <View style={styles.matchesProfileItem}>
       <Text style={styles.matchesTextProfileItem}>
-        <Icon name="heart" size={13} color={WHITE} /> {matches}% Match!
+        <Icon name="heart" size={13} color={isOnline? WHITE:'#FFE5CA'}  /> {matches}% Match!
       </Text>
     </View>
 
@@ -52,7 +53,7 @@ const ProfileItem = ({
       <Text style={styles.iconProfile}>
         <Icon name="calendar" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{info4}</Text>
+      <Text style={[styles.infoContent,]} >{info4}</Text>
     </View>
   </View>
 );
