@@ -9,7 +9,6 @@ import SocialLinks from "../components/SocialLinks";
 const User = ({route}) => {
 const navigation = useNavigation()
 
-console.log('route',route?.params?.item);
 
 
     return(

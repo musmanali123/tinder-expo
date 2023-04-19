@@ -52,4 +52,5 @@ export type DataT = {
   info3?: string;
   info4?: string;
   location?: string;
+  gender:String;
 };
