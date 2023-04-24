@@ -2,20 +2,26 @@ import { View, TouchableOpacity, TextInput, Text, FlatList, SafeAreaView, Modal,
 import styles, { BLACK, DARK_GRAY, DIMENSION_HEIGHT, DIMENSION_WIDTH, GRAY, PRIMARY_COLOR } from "../assets/styles"
 import { Icon } from "../components"
 import Entypo from "@expo/vector-icons/Entypo";
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import DEMO from '../assets/data/demo'
 import UserSearchData from "../components/UserSearchData";
+import { useNavigation } from "@react-navigation/native";
 
 const SearchProfile = () => {
     const [data, setData] = useState(DEMO)
     const [searchText, setsearchText] = useState("")
     const [isOpenModal, setIsOpenModal] = useState(false)
+    const navigation = useNavigation();
+
+    useEffect(() => {
+        onSearch('')
+    }, [])
+
 
     const onSearch = (text: string) => {
         if (text == '') {
             setData(DEMO)
         } else {
-
             let tempData = data.filter((item) => {
                 return item.name.toLocaleLowerCase().indexOf(text.toLocaleLowerCase()) > -1;
             })
@@ -52,6 +58,7 @@ const SearchProfile = () => {
                         <View style={{ borderBottomWidth: 1, width: "100%", }}>
                             <TouchableOpacity
                                 onPress={() => {
+                                    onSearch('')
                                     let tempData = data.sort((a, b) => a.name > b.name ? 1 : -1);
                                     setData(tempData);
                                     setIsOpenModal(false)
@@ -70,8 +77,8 @@ const SearchProfile = () => {
                         <View style={{ borderBottomWidth: 1, width: "100%", }}>
                             <TouchableOpacity
                                 onPress={() => {
-                                    let tempDataMale = data.filter((a)=>{
-                                        return a.gender === 'male'
+                                    let tempDataMale = data.filter((a) => {
+                                        return a.gender == 'male'
                                     })
                                     setData(tempDataMale)
                                     setIsOpenModal(false)
@@ -86,16 +93,17 @@ const SearchProfile = () => {
                                     }}>Sort By Male</Text>
                             </TouchableOpacity>
                         </View>
-
                         <View style={{ width: "100%", }}>
                             <TouchableOpacity
-                               onPress={() => {
-                                let tempsortFemale = data.filter((b)=>{
-                                    return b.gender === 'female'
-                                })
-                                setData(tempsortFemale)
-                                setIsOpenModal(false)
-                            }}
+                                onPress={() => {
+                                    onSearch('')
+                                    let tempsortFemale = data.filter((b) => {
+                                        return b.gender === 'female'
+                                    })
+                                    setData(tempsortFemale)
+                                    setIsOpenModal(false)
+
+                                }}
                             >
                                 <Text
                                     style={{
@@ -124,7 +132,11 @@ const SearchProfile = () => {
                 alignItems: "center",
                 justifyContent: 'space-between'
             }}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => {
+                        navigation.goBack()
+                    }}
+                >
                     <Icon
                         name="chevron-back"
                         size={25}
